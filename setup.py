@@ -12,6 +12,12 @@ setup(
     description='Lie Groups for PyTorch',
     author='teedrz',
     packages=['lietorch'],
+    install_requires=[
+        'numpy',
+        'scipy',
+        'torch',
+        'torchvision',
+    ],
     ext_modules=[
         CUDAExtension('lietorch_backends', 
             include_dirs=[
